@@ -270,8 +270,10 @@ body {
 
 .radio-btn:hover,
 .radio-btn:focus {
-  color: white;
-  background-color: #188ce8;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--accent-color);
+  color: var(--white);
 }
 
 .gallery {
@@ -282,14 +284,10 @@ body {
   gap: 30px;
 }
 
-.gallery-img {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .gallery-img:hover,
 .gallery-img:focus {
-  background-color: #2196f3;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-title {
@@ -387,9 +385,6 @@ body {
 .team-list {
   display: flex;
   gap: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .section-team {
@@ -412,6 +407,7 @@ body {
 .team-soc-item {
   width: 44px;
   height: 44px;
+  list-style: none;
 }
 
 .team-soc-link {
@@ -436,12 +432,11 @@ body {
 
 .team-soc-link:hover .team-soc-icon {
   fill: var(--white);
+  outline: none;
 }
 
 .team-img {
   background: #ffffff;
-
-  /* material shadow v1 */
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -497,6 +492,7 @@ body {
 .clients-item {
   width: calc((100% - 170px) / 6);
   height: 92px;
+  color: #188ce8;
 }
 
 .clients-link {
@@ -515,7 +511,7 @@ body {
 
 .clients-link:hover,
 .clients-link:focus {
-  background-color: #2196f3;
+  border-color: #2196f3;
 }
 
 .clients-link:hover .clients-item-icon {
