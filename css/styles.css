@@ -184,7 +184,6 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: #2196f3;
   background-color: #188ce8;
 }
 
@@ -430,7 +429,8 @@ body {
   background-color: #2196f3;
 }
 
-.team-soc-link:hover .team-soc-icon {
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon  {
   fill: var(--white);
   outline: none;
 }
@@ -514,7 +514,8 @@ body {
   border-color: #2196f3;
 }
 
-.clients-link:hover .clients-item-icon {
+.clients-link:hover .clients-item-icon,
+.clients-link:focus .clients-item-icon  {
   fill: var(--accent-color);
 }
 
