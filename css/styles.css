@@ -614,6 +614,7 @@ body {
   background-color: #2196f3;
 }
 
-.join-icon:hover .join-soc-icon {
+.join-icon:hover .join-soc-icon,
+.join-icon:focus .join-soc-icon {
   fill: #ffffff;
 }
